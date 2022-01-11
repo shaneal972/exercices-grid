@@ -1,0 +1,48 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(4, minmax(140px, auto));
+    grid-gap: 1em;
+    grid-template-areas:
+        "header header header"
+        "img1 img2 aside"
+        "cp cp aside"
+        "footer footer footer";
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.item-1 {
+    background: rgb(48, 151, 53);
+    grid-area: header;
+}
+
+.item-2,
+.item-3,
+.item-4 {
+    background: rgb(195, 196, 195);
+}
+
+.item-2 {
+    grid-area: img1;
+}
+
+.item-3 {
+    grid-area: img2;
+}
+
+.item-4 {
+    grid-area: aside;
+}
+
+.item-5 {
+    background: rgb(245, 119, 17);
+    grid-area: cp;
+}
+
+.item-6 {
+    background: rgb(138, 67, 160);
+    grid-area: footer;
+}
