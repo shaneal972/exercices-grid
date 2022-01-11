@@ -1,0 +1,11 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(200px, auto));
+    grid-auto-rows: minmax(140px, auto);
+    grid-gap: 1em;
+}
+
+.grid-item {
+    background: rgb(48, 151, 53);
+    text-align: center;
+}
